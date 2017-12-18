@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity.Migrations;
 
-namespace EFPRM.Migrations
+namespace EFORM.Migrations
 {
     public class Northwind1_1 : DbMigration
     {

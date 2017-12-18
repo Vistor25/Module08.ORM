@@ -1,22 +1,22 @@
-using EFPRM.Models;
+using EFORM.Models;
 
-namespace EFPRM.Migrations
+namespace EFORM.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<EFPRM.Models.Northwind>
+    internal sealed class Configuration : DbMigrationsConfiguration<EFORM.Models.Northwind>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
             AutomaticMigrationDataLossAllowed = true;
-            ContextKey = "EFPRM.Models.Northwind";
+            ContextKey = "EFORM.Models.Northwind";
         }
 
-        protected override void Seed(EFPRM.Models.Northwind context)
+        protected override void Seed(EFORM.Models.Northwind context)
         {
             context.Regions.AddOrUpdate(region => region.RegionsID,
                  new Regions
